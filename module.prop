@@ -1,9 +1,9 @@
 id=EmojiOne-systemless
 name=Emoji One
-version=v1.311
+version=v1.32
 versionCode=9
 author=jerbear294
 description=Systemlessly replaces emoji font with Emoji One.
 support=http://forum.xda-developers.com/apps/magisk/module-emoji-one-t3477911
 donate=jsilliman@cfl.rr.com on PayPal
-template=1400
+minMagisk=1500
