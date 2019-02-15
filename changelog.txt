@@ -19,3 +19,5 @@ v1.32
 v1.4
 	- Updated to EmojiOne 4.0
         - Updated to Magisk module template v17000
+v1.5
+	- Updated to EmojiOne 4.5
