@@ -1,7 +1,7 @@
-id=EmojiOne-systemless
+id=JoyPixels
 name=JoyPixels (formerly Emoji One)
-version=v1.6
-versionCode=14
+version=v1.61
+versionCode=15
 author=jerbear294
 description=Systemlessly replaces emoji font with JoyPixels.
 support=http://forum.xda-developers.com/apps/magisk/module-emoji-one-t3477911

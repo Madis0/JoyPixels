@@ -8,6 +8,9 @@ Systemlessly replaces emoji font with JoyPixels.
 
 ### Changelog
 
+v1.61
+	- Installer hotfix
+
 v1.6
 	- Updated to JoyPixels 5.0
 	- The module now works properly on any ROM, regardless of OEM (credit to https://github.com/Magisk-Modules-Repo/blobmoji)

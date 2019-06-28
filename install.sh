@@ -142,7 +142,7 @@ on_install() {
   for i in $FILENAME
   do
     ui_print "- Copying fonts files to $i"
-    cp -f $MODPATH/system/fonts/Blobmoji.ttf $MODPATH/system/fonts/$i
+    cp -f $MODPATH/system/fonts/JoyPixels.ttf $MODPATH/system/fonts/$i
   done
 }
 
