@@ -123,7 +123,7 @@ REPLACE="
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "           Emoji One           "
+  ui_print "           JoyPixels           "
   ui_print "*******************************"
 }
 
@@ -133,7 +133,17 @@ on_install() {
   # The following is the default implementation: extract $ZIPFILE/system to $MODPATH
   # Extend/change the logic to whatever you want
   ui_print "- Extracting module files"
-  unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" 'system/fonts/JoyPixels.ttf' -d $MODPATH >&2
+
+  ui_print "- Searching in fonts.xml"
+  [[ -d /sbin/.core/mirror ]] && MIRRORPATH=/sbin/.core/mirror || unset MIRRORPATH
+  FILE=/system/etc/fonts.xml
+  FILENAME=$(sed -ne '/<family lang="und-Zsye".*>/,/<\/family>/ {s/.*<font weight="400" style="normal">\(.*\)<\/font>.*/\1/p;}' $MIRRORPATH$FILE)
+  for i in $FILENAME
+  do
+    ui_print "- Copying fonts files to $i"
+    cp -f $MODPATH/system/fonts/Blobmoji.ttf $MODPATH/system/fonts/$i
+  done
 }
 
 # Only some special files require specific permissions
