@@ -1,7 +1,7 @@
 # JoyPixels (formerly Emoji One)
 Systemlessly replaces emoji font with JoyPixels.
 
-*Current JoyPixels version: `5.0`*
+*Current JoyPixels version: `5.5`*
 
 
 #### Thread: https://forum.xda-developers.com/apps/magisk/module-emoji-one-t3477911
